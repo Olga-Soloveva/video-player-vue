@@ -1,11 +1,28 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import VideoBlock from './blocks/VideoBlock.vue'
+import DisplayBlock from './blocks/DisplayBlock.vue'
+
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <header>
+    <h1>Тестовое задание</h1>
+  </header>
+
+  <main>
+    <VideoBlock can-use-custom-player/>
+    <DisplayBlock />
+  </main>
 </template>
 
-<style scoped></style>
+<style scoped>
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
